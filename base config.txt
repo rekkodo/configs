@@ -1,0 +1,26 @@
+en 
+conf t
+host 
+line vty 0 4
+login
+password cisco	
+logg sync
+line c 0
+login
+password cisco
+no exec-timeout
+logg sync
+exit
+no ip domain-lookup
+enable secret class
+banner motd /
+
+**********************************************
+
+DO NOT LOG IN !!!
+
+***********************************************
+
+/
+end
+copy run start
